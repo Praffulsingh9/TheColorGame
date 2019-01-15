@@ -53,11 +53,13 @@ reset.addEventListener("click",function () {
 
 	colorDisplay.textContent = pickedColor;
 
+	messageDisplay.textContent = "";
+	
 	for (var i = 0 ; i < squares.length ; i++) {
 		squares[i].style.background = colors[i]; 
 	}
 
-	h1.style.background = "#232323";
+	h1.style.background = "steelblue";
 })
 
 for (var i = 0; i < squares.length; i++) {
@@ -110,3 +112,4 @@ function randomColor() {
 
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 }
+
